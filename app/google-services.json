@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "9553468196",
+    "project_id": "himama-55e6e",
+    "storage_bucket": "himama-55e6e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9553468196:android:69a71fa32f5013f0ab71b1",
+        "android_client_info": {
+          "package_name": "com.example.himama"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf9KATZ41hU6raU8VW9ZzXaXiybGlZiGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
