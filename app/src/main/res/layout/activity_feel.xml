@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FADFFB"
+    tools:context="feelActivity">
+
+    <!-- How are you feeling today? TextView -->
+    <TextView
+        android:id="@+id/edtFeel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:text="How are you feeling today?"
+        android:textSize="28sp"
+        android:textColor="#FF4081"
+        android:textStyle="bold" />
+
+    <!-- Happy Button -->
+
+    <ImageView
+        android:id="@+id/imgDoctor"
+        android:layout_width="186dp"
+        android:layout_height="172dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/doctor" />
+
+    <Button
+        android:id="@+id/btnHappy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtFeel"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FF80AB"
+        android:text="Happy"
+        android:textColor="@android:color/white" />
+
+    <!-- Sad Button -->
+    <Button
+        android:id="@+id/btnSad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtFeel"
+        android:layout_toEndOf="@id/btnHappy"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#FF80AB"
+        android:text="Sad"
+        android:textColor="@android:color/white" />
+
+    <!-- Angry Button -->
+    <Button
+        android:id="@+id/btnAngry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtFeel"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/btnSad"
+        android:backgroundTint="#FF80AB"
+        android:text="Angry"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <!-- Irritated Button -->
+    <Button
+        android:id="@+id/btnIrritated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtFeel"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/btnAngry"
+        android:backgroundTint="#FF80AB"
+        android:text="Annoyed"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btnEmergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Emergency"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/quoteEdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Hi!"
+        android:textColor="#FF0066"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/edtThought"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Thought of the Day !"
+        android:textSize="20sp"
+        android:textColor="#FF4081"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgQuiz"
+        android:layout_width="153dp"
+        android:layout_height="105dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
+        android:contentDescription="Quiz Image"
+        android:src="@drawable/quiz" />
+
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgQuiz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Let's Play Mommy!"
+        android:textColor="#FF4081"
+        android:textSize="14sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btnQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#87CEEB"
+    android:text="Click Here to Start"
+    android:textColor="#FFFFFF" />
+
+
+
+</RelativeLayout>
