@@ -1,6 +1,7 @@
 package com.example.himama;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
@@ -14,8 +15,9 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
-public class angryActivity extends AppCompatActivity {
+public class anxiousActivity extends AppCompatActivity {
 
     private List<String> videoLinks;
     private int currentLinkIndex;
@@ -26,7 +28,7 @@ public class angryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_angry);
+        setContentView(R.layout.activity_anxious);
 
         // Initialize Firestore
         firestore = FirebaseFirestore.getInstance();
@@ -42,7 +44,7 @@ public class angryActivity extends AppCompatActivity {
         webViews.add(webView3);
 
         // Initialize more button
-        moreButton = findViewById(R.id.moreBtn);
+        moreButton = findViewById(R.id.MoreButton);
         moreButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,7 +66,7 @@ public class angryActivity extends AppCompatActivity {
 
         // Fetch new video links from Firestore
         firestore.collection("Moodboard")
-                .document("Angry")
+                .document("Anxious")
                 .get()
                 .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                     @Override
@@ -86,7 +88,7 @@ public class angryActivity extends AppCompatActivity {
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         // Handle failure to fetch video links
-                        Toast.makeText(angryActivity.this, "Check Internet Connection", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(anxiousActivity.this, "Check Internet Connection", Toast.LENGTH_SHORT).show();
                     }
                 });
     }

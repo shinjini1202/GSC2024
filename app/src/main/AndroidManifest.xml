@@ -15,6 +15,30 @@
         android:theme="@style/Theme.HiMama"
         tools:targetApi="31">
         <activity
+            android:name=".chatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".annoyedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".anxiousActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".happyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firstqActivity"
+            android:exported="false" />
+        <activity
+            android:name=".secondqActivity"
+            android:exported="false" />
+        <activity
+            android:name=".thirdqActivity"
+            android:exported="false" />
+        <activity
             android:name=".quizActivity"
             android:exported="false" />
         <activity
@@ -25,6 +49,9 @@
             android:exported="false" />
         <activity
             android:name=".callActivity"
+            android:exported="false" /> <!-- Add the Numbers activity -->
+        <activity
+            android:name=".Numbers"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FADFFB"
-    tools:context=".angryActivity">
+    tools:context=".sadActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -13,18 +13,20 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <TextView
-                android:id="@+id/edtAngry1"
+                android:id="@+id/edtSad1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="25dp"
-                android:text="It's okay to feel overwhelmed sometimes"
+                android:text="You're stronger than you know, and I'm here to support you through it all."
                 android:textColor="#FF4081"
                 android:textSize="18sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"
+                android:gravity="center" />
 
             <ImageView
                 android:id="@+id/imageView"
@@ -32,7 +34,7 @@
                 android:layout_height="112dp"
                 app:srcCompat="@drawable/tryme"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="50dp" />
+                android:layout_marginTop="65dp" />
 
             <!-- WebView 1 -->
             <WebView

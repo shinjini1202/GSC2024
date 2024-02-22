@@ -1,29 +1,148 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FADFFB"
-    tools:context=".quizActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/edtQuiz"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="106dp"
-        android:layout_marginTop="343dp"
-        android:layout_marginEnd="106dp"
-        android:layout_marginBottom="343dp"
-        android:text="Coming Soon"
-        android:textColor="#FF8FB5"
-        android:textSize="34sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz Categories"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#FF69B4"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Quiz Category 1: 1st Trimester -->
+        <LinearLayout
+            android:id="@+id/category1Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFC0CB"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:id="@+id/category1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1st Trimester"
+                android:textColor="#FF69B4"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/category1Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Designed for individuals in their first trimester of pregnancy, this quiz offers essential knowledge about do's and don'ts during this crucial period. Covering topics such as nutrition, exercise, and lifestyle choices, the quiz provides valuable insights to help expectant mothers navigate their pregnancy safely and confidently."
+                android:textColor="#FF69B4"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/category1QuestionCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Questions: 25"
+                android:textStyle="bold|italic"
+                android:textColor="#FFFF"
+                android:textSize="16sp"/>
+            <Button
+                android:id="@+id/startNowButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Now"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF4081"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+
+        <!-- Quiz Category 2: 2nd Trimester -->
+        <LinearLayout
+            android:id="@+id/category2Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFC0CB"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:id="@+id/category2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2nd Trimester"
+                android:textColor="#FF69B4"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/category2Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tailored for individuals entering their second trimester of pregnancy, this quiz offers insightful guidance on do's and don'ts specific to this stage of pregnancy. Covering topics like prenatal care, exercise modifications, and nutritional requirements, the quiz equips expectant mothers with essential knowledge to promote a healthy and fulfilling pregnancy journey."
+                android:textColor="#FF69B4"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/category2QuestionCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Questions: 25"
+                android:textColor="#FFFF"
+                android:textStyle="bold|italic"
+                android:textSize="16sp"/>
+            <Button
+                android:id="@+id/startNowButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Now"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF4081"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+
+        <!-- Quiz Category 3: 3rd Trimester -->
+        <LinearLayout
+            android:id="@+id/category3Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFC0CB"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:id="@+id/category3Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3rd Trimester"
+                android:textSize="20sp"
+                android:textColor="#FF69B4"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/category3Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Designed for individuals in their third trimester of pregnancy, this quiz focuses on essential do's and don'ts to ensure a smooth and safe transition into childbirth. From optimal positioning for comfort to recognizing signs of labor, the quiz provides valuable insights to support expectant mothers in their final stage of pregnancy."
+                android:textColor="#FF69B4"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/category3QuestionCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Questions: 25"
+                android:textStyle="bold|italic"
+                android:textColor="#FFFF"
+                android:textSize="16sp"/>
+            <Button
+                android:id="@+id/startNowButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Now"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF4081"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

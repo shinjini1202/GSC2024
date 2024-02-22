@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FADFFB">
+
+    <!-- ImageView for the chat icon -->
+    <ImageView
+        android:id="@+id/imageViewChatIcon"
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/chaticon" />
+
+    <!-- Title TextView -->
+    <!-- Added background padding and color -->
+
+    <!-- Chatbot display area -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@id/imageViewChatIcon"
+        android:layout_toRightOf="@id/imageViewChatIcon"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:text="Hi Mum! Let's Talk"
+        android:textColor="#FF4081"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:id="@+id/scrollViewChatbot"
+        android:layout_width="match_parent"
+        android:layout_height="515dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="69dp"
+        android:padding="16dp"
+        android:contentDescription="Chatbot conversation history">
+
+        <!-- Chatbot messages container -->
+        <LinearLayout
+            android:id="@+id/chatbotContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Chatbot messages will be added dynamically here -->
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- Input text field and send button -->
+    <RelativeLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFC0CB"
+        android:padding="16dp">
+
+        <!-- Input text field -->
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:hint="Type a message..."
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Send button -->
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#FF69B4"
+            android:text="Send"
+            android:textColor="#000000" /> <!-- Use a darker text color here -->
+
+    </RelativeLayout>
+
+</RelativeLayout>

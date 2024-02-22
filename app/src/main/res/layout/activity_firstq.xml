@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FADFFB">
+
+
+    <!-- Image View -->
+
+    <!-- Text View -->
+
+    <ImageView
+        android:id="@+id/imageViewQuizIcon"
+        android:layout_width="183dp"
+        android:layout_height="189dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:src="@drawable/quizicon" />
+
+    <!-- Question TextView -->
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@id/imageViewQuizIcon"
+        android:text="Good Luck Mommy Ace the First Trimester"
+        android:textStyle="italic|bold"
+        android:textColor="#FF4081"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FF4081"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="16dp"
+        android:text="Question will show up here"/>
+
+    <!-- Option Buttons -->
+    <Button
+        android:id="@+id/buttonOption1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewQuestion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="#FF80AB"
+        android:textColor="#FFFF"
+        android:text="Option 1"/>
+
+    <Button
+        android:id="@+id/buttonOption2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonOption1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#FF80AB"
+        android:textColor="#FFFF"
+        android:text="Option 2"/>
+
+    <Button
+        android:id="@+id/buttonOption3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonOption2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#FF80AB"
+        android:textColor="#FFFF"
+        android:text="Option 3"/>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonOption2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="#FF80AB"
+        android:textColor="#FFFF"
+        android:text="NEXT"/>
+
+    <!-- Explanation TextView -->
+    <TextView
+        android:id="@+id/textViewExplanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#FF4081"
+        android:layout_below="@id/buttonOption3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Explanation will show up here"/>
+
+</RelativeLayout>
